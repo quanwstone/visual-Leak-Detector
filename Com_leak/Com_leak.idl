@@ -1,0 +1,35 @@
+// Com_leak.idl : Com_leak 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(Com_leak.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(BF9E7870-EEDA-4653-B3A7-3D59FC404DE0),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICLeak_Test : IDispatch{
+	[id(1)] HRESULT Test_Leak(void);
+};
+[
+	uuid(37DDF05D-5AA0-49E6-BF99-697752608316),
+	version(1.0),
+]
+library Com_leakLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(FFADF853-955D-450C-9CCE-1597849973D1)		
+	]
+	coclass CLeak_Test
+	{
+		[default] interface ICLeak_Test;
+	};
+};
+

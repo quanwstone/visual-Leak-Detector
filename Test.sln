@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{001B8E26-F948-426F-8B82-1101FFBB437F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Com_leak", "Com_leak\Com_leak.vcxproj", "{7BAEF5FE-F95D-416E-A62C-76E036D6E15B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Com_leakPS", "Com_leak\Com_leakPS.vcxproj", "{2D63D593-0B4D-4656-BB35-E8A1AC693A50}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BAEF5FE-F95D-416E-A62C-76E036D6E15B} = {7BAEF5FE-F95D-416E-A62C-76E036D6E15B}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +20,12 @@ Global
 		{001B8E26-F948-426F-8B82-1101FFBB437F}.Debug|Win32.Build.0 = Debug|Win32
 		{001B8E26-F948-426F-8B82-1101FFBB437F}.Release|Win32.ActiveCfg = Release|Win32
 		{001B8E26-F948-426F-8B82-1101FFBB437F}.Release|Win32.Build.0 = Release|Win32
+		{7BAEF5FE-F95D-416E-A62C-76E036D6E15B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7BAEF5FE-F95D-416E-A62C-76E036D6E15B}.Debug|Win32.Build.0 = Debug|Win32
+		{7BAEF5FE-F95D-416E-A62C-76E036D6E15B}.Release|Win32.ActiveCfg = Release|Win32
+		{7BAEF5FE-F95D-416E-A62C-76E036D6E15B}.Release|Win32.Build.0 = Release|Win32
+		{2D63D593-0B4D-4656-BB35-E8A1AC693A50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D63D593-0B4D-4656-BB35-E8A1AC693A50}.Release|Win32.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

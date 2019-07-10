@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{21e1cda4-bf2a-41ab-be52-fe99e92d7213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{327c9109-65e4-472c-9570-cdaddbdd6c41}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Com_leakps.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Com_leak_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Com_leak_p.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlldata.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

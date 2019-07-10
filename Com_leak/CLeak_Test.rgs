@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {FFADF853-955D-450C-9CCE-1597849973D1} = s 'CLeak_Test Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{37DDF05D-5AA0-49E6-BF99-697752608316}'
+			Version = s '1.0'
+		}
+	}
+}
